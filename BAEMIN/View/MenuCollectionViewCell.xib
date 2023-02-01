@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MenuCollectionViewCell" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="BAEMIN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3z-81-KDf">
+                        <rect key="frame" x="25.5" y="5" width="203" height="155"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-fB-d66">
+                        <rect key="frame" x="104" y="227" width="46" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Phy-fB-d66" secondAttribute="bottom" constant="10" id="Bzx-uM-T8T"/>
+                <constraint firstItem="V3z-81-KDf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FCN-J0-u6O"/>
+                <constraint firstItem="V3z-81-KDf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="HDZ-Bc-tyC"/>
+                <constraint firstItem="V3z-81-KDf" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.6" id="cwE-hi-MpA"/>
+                <constraint firstItem="Phy-fB-d66" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="h9D-vp-veW"/>
+                <constraint firstItem="V3z-81-KDf" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="lK0-bi-gmc"/>
+            </constraints>
+            <size key="customSize" width="254" height="258"/>
+            <connections>
+                <outlet property="menuImage" destination="V3z-81-KDf" id="70k-XR-6rh"/>
+                <outlet property="menuLabel" destination="Phy-fB-d66" id="JBx-BL-nqV"/>
+            </connections>
+            <point key="canvasLocation" x="279.71014492753625" y="81.026785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
